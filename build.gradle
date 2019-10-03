@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.gaba'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.9.5'
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.6.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.1.6.RELEASE'
+    compile 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.3.Final'
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.6'
+
+}
